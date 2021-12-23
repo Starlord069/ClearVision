@@ -46,13 +46,13 @@
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
 	--background-attachment: fixed; /* app background attachment [default: fixed] */
-	--background-brightness: 200%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
-	--background-contrast: 150%; /* app background contrast [default: 100%] */
-	--background-saturation: 100%; /* app background saturation [default: 100%] */
+	--background-brightness: 175%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--background-contrast: 125%; /* app background contrast [default: 100%] */
+	--background-saturation: 110%; /* app background saturation [default: 100%] */
 	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
-	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+	--background-grayscale: 15%; /* app background grayscale ( 0 - 100%) [default: 0%] */
 	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
-	--background-blur: 0px; /* app background blur [default: 0px] */
+	--background-blur: 5px; /* app background blur [default: 0px] */
 	
 	/* HOME BUTTON ICON */
 	--home-icon: url(https://clearvision.gitlab.io/icons/discord.svg); /* home button icon (link must be HTTPS) [default: url(https://clearvision.gitlab.io/icons/discord.svg)]*/
