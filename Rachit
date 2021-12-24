@@ -41,7 +41,7 @@
 	/* APP BACKGROUND */
 	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
 	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
-	--background-image: url(https://cdn.discordapp.com/attachments/819569400969429022/923814563663740959/IMG_1648.JPG); /* app background image (link must be HTTPS) [default: url(https://cdn.discordapp.com/attachments/819569400969429022/923814563663740959/IMG_1648.JPG)]*/
+	--background-image: url(https://cdn.discordapp.com/attachments/819569400969429022/923825890398449724/a_n_i_m_e__m_e_m_e_ss_Instagram_photo__if_you_could_be_a_character_for_a_day__who_would_it_be_and_why_.jpg); /* app background image (link must be HTTPS) [default: url(https://cdn.discordapp.com/attachments/819569400969429022/923825890398449724/a_n_i_m_e__m_e_m_e_ss_Instagram_photo__if_you_could_be_a_character_for_a_day__who_would_it_be_and_why_.jpg)]*/
 	--background-position: center; /* app background position [default: center] */
 	--background-size: cover; /* app background size [default: cover] */
 	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
