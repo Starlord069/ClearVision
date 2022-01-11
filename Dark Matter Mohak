@@ -10,12 +10,102 @@
 
 /* Variables */
 :root {
-    --avatar-size: 32px;
-    --background-image: url('https://cdn.wallpapersafari.com/80/92/VrwB8s.jpg');
-    --home-image: url('data:image/png;base64,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');
-    --background-solid: #161921;
-    --background-solid-dark: #101218;
-    --background-solid-darker: #0c0e12;
-    --accent: 37, 172, 232;
-    --accent-alt: 29, 101, 134;
+       
+	/* ACCENT COLORS */
+	--main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+	--hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+	--success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+	--danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */	
+	--url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+
+	/* STATUS COLORS */
+	--online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+	--idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+	--dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+	--streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+	--offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+	/* GENERAL */
+	--main-font: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif; /* main font for app (font must be installed) [default: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif] */
+	--code-font: Consolas, Liberation Mono, Menlo, Courier, monospace; /* font for codeblocks (font must be installed) [default: Consolas, Liberation Mono, Menlo, Courier, monospace] */
+	--text-normal: rgb(220, 221, 222); /* color of default discord text */
+	--text-muted:  rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+	--channels-width: 220px; /* channel list width (240px for Discord default) [default: 220px] */
+	--members-width: 240px; /* member list width [default: 240px] */
+
+	/* APP BACKGROUND */
+	--background-shading: 100%; /* app background shading (0 for complete smoothness) [default: 100%] */
+	--background-overlay: rgba(0, 0, 0, 0.6); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+	--background-image: url(https://cdn.wallpapersafari.com/80/92/VrwB8s.jpg); /* app background image (link must be HTTPS) [default: url(https://cdn.wallpapersafari.com/80/92/VrwB8s.jpg)]*/
+	--background-position: center; /* app background position [default: center] */
+	--background-size: cover; /* app background size [default: cover] */
+	--background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+	--background-attachment: fixed; /* app background attachment [default: fixed] */
+	--background-brightness: 150%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+	--background-contrast: 125%; /* app background contrast [default: 100%] */
+	--background-saturation: 75%; /* app background saturation [default: 100%] */
+	--background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+	--background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+	--background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+	--background-blur: 0px; /* app background blur [default: 0px] */
+	
+	/* HOME BUTTON ICON */
+	--home-icon: url(data:image/png;base64,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); /* home button icon (link must be HTTPS) [default: url(data:image/png;base64,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)]*/
+	--home-position: center; /* home button icon position [default: center] */
+	--home-size: 80px; /* home button icon size [default: 40px] */
+		
+	/* CHANNEL COLORS */
+	--channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+	--channel-color:  rgba(255,255,255,0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+	--channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+	--muted-color: rgba(255,255,255,0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+	
+	/* MODAL BACKDROP */
+	--backdrop-overlay: rgba(0, 0, 0, 0.8); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+	--backdrop-image: var(--background-image); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
+	--backdrop-position: var(--background-position); /* modal backdrop position [default: var(--background-position)] */
+	--backdrop-size: var(--background-size); /* modal backdrop size [default: var(--background-size)] */
+	--backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
+	--backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+	--backdrop-brightness: var(--background-brightness); /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+	--backdrop-contrast: var(--background-contrast); /* modal backdrop contrast [default: var(--background-contrast)] */
+	--backdrop-saturation: var(--background-saturation); /* modal backdrop saturation [default: var(--background-saturation)] */
+	--backdrop-invert: var(--background-invert); /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
+	--backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(--background-grayscale)] */
+	--backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(--background-sepia)] */
+	--backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+	
+	/* USER POPOUT BACKGROUND */
+	--user-popout-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+	--user-popout-position: var(--background-position); /* user popout background position [default: var(--background-position)] */
+	--user-popout-size: var(--background-size); /* user popout background size [default: var(--background-size)] */
+	--user-popout-repeat: var(--background-repeat); /* user popout background repeat [default: var(--background-repeat)] */
+	--user-popout-attachment: var(--background-attachment); /* user popout background attachment [default: var(--background-attachment)] */
+	--user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+	--user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(--background-contrast)] */
+	--user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(--background-saturation)] */
+	--user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(--background-invert)] */
+	--user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+	--user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(--background-sepia)] */
+	--user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+	--user-popout-overlay: rgba(0, 0, 0, .6); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
+	
+	/* USER MODAL BACKGROUND */
+	--user-modal-image: var(--background-image); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+	--user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
+	--user-modal-size: var(--background-size); /* user modal background size [default: var(--background-size)] */
+	--user-modal-repeat: var(--background-repeat); /* user modal background repeat [default: var(--background-repeat)] */
+	--user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+	--user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+	--user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(--background-contrast)] */
+	--user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(--background-saturation)] */
+	--user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(--background-invert)] */
+	--user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+	--user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
+	--user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+	
+	/* THEME BD COLORS */
+	--bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+	--bd-blue-hover: var(--hover-color); /* betterdiscord hover color [default: var(--hover-color)] */
+	--bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
